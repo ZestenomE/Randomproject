@@ -1,0 +1,173 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .container {
+    height: 100vh;
+    background-color: rgb(57, 217, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .kotak {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+
+  }
+
+  .jk {
+    width: 500px;
+    margin-left: 150px;
+  }
+
+  h1:hover {
+    color: rgb(87, 195, 238);
+  }
+
+  button {
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(202, 195, 202);
+  }
+
+  button:hover {
+    background-color: rgb(237, 23, 148);
+    transform: scale(1.1);
+  }
+
+  .beda {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(21, 13, 13, 0.196);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .uuuu {
+    display: flex;
+    padding-right: 10px;
+  }
+
+  p {
+    text-align: justify;
+    padding-right: 55px;
+    font-size: 16px;
+    font-family: 'Acme';
+  }
+
+  h1 {
+    font-size: 50px;
+    font-family: 'Acme';
+    color: rgb(158, 154, 154);
+  }
+
+  .gmr {
+    opacity: 0 !important;
+    transform: scale(1.1);
+  }
+
+  #img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 15%;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+  }
+
+  #ltnk {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 15%;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+  }
+</style>
+<div class="beda">
+  <p>sesuatu</p>
+  <div class="uuuu">
+    <p style="padding-right: 10px;">sesu</p>
+    <p>hai</p>
+  </div>
+
+</div>
+<div class="container">
+  <img id="img" class="gmr" src="tomi.png" alt="">
+  <img id="ltnk" class="gmr"
+    src="https://stickerly.pstatic.net/sticker_pack/M8z3ChMT7JYIeuRpPEHWjg/SD27RN/2/e78064f8-adb0-47f5-99cf-17557949f5af.png"
+    alt="">
+  <div class="kotak">
+    <img class="jk" src="https://hololive.hololivepro.com/wp-content/uploads/2020/07/Vestia-Zeta_pr-img_03.png" alt="">
+  </div>
+  <div class="kotak" style="padding-left: 18px;">
+    <h1>VESTIA ZETA</h1>
+    <p style="margin-bottom: 10px;">ZETA... ZETA ZETA ZETAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAA
+    
+    AAAAAAAAAAAAAAAAAGH AAAAAAAAAAAAAAAAAAAAAAAGH! WANGI WANGI WANGI WANGI HU HA HU HA HU HA, aaaah baunya Zeta wangi aku
+    mau nyiumin aroma wanginya Zeta AAAAAAAAH Rambutnya. AAAHHH rambutnya juga pengen aku elus-elus ----- AAAAAH Zeta keluar
+    pertama kali juga manis!!! Dia CROOTTT itu juga manis banget AAAAAAAAH ZETA LUCCUUUUUUUUUUUUUUU......... GUA BAKAL RELA
+    AMBATUKAM SETIAP HARI BUAT ZETA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH
+    
+    Apa? Zeta itu gak nyata? Cuma karakter 2 dimensi katamu?
+    
+    Nggak ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK BANGSAAAAAT!
+    
+    GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI Zeta ngeliat gw. Zeta di laptop ngeliatin gw. Zeta... kamu percaya
+    sama aku? AAAAAAAAHHH syukur Zeta gak malu merelakan aku aaaaaah!!! YEAAAAAAAAAAAH GUA MASIH PUNYA ZETA, SENDIRI PUN
+    NGGAK SAMA AAAAAAAAAAAAAAH
+    
+    AYAME IOFI KOBOOOOOOOOOOOOOOOOOOOOOOO KIRIMKANLAH CINTAKU PADA ZETA KIRIMKAN KE YEEAAAAAAAAH</p>
+    <div>
+      <button id="btn" style="padding: 5px 10px;border-radius: 9px;">love</button>
+      <button id="kntl" style="padding: 5px 10px;border-radius: 9px;"> hate </button>
+    </div>
+  </div>
+</div>
+<script>
+  let btn = document.getElementById('btn');
+  let img = document.getElementById('img');
+  const zeta = new Audio();
+  zeta.src = 'audio/zeta punya nopal.mp3';
+
+  btn.addEventListener('click', function () {
+    img.classList.toggle('gmr');
+    setTimeout(() => {
+      img.classList.toggle('gmr');
+    }, 3000);
+    zeta.play();
+  })
+
+  let kntl = document.getElementById('kntl');
+  let ltnk = document.getElementById('ltnk');
+  const sfx = new Audio();
+  sfx.src = 'audio/zeta.mp3';
+
+  kntl.addEventListener('click', function () {
+    ltnk.classList.toggle('gmr');
+    // delay 3 sec and add class gmr
+    setTimeout(function () {
+      ltnk.classList.toggle('gmr');
+    }, 3000);
+    sfx.play();
+  })
+</script>
